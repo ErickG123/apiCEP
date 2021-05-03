@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>API de CEP's</title>
+</head>
+<body>
+
+    <header class="title">
+        Exemplo de API que através do CEP retorna o Nome da Rua, Bairro,
+        Cidade e Estado correspondente ao CEP informado.
+    </header>
+
+    <form method="get" action=".">
+        <label>CEP:</label>
+            <input name="cep" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);"/>
+        <label class="content">Rua:</label>
+            <input name="rua" id="rua"/>
+        <label class="content">Bairro:</label>
+            <input name="bairro" id="bairro"/>
+        <label class="content">Cidade:</label>
+            <input name="cidade" id="cidade"/>
+        <label class="content">Estado:</label>
+            <input name="uf" id="uf"/>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
